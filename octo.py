@@ -9,7 +9,7 @@ print("Connected to Web3: ", web3.isConnected())
 to_account = str(input("Import your wallet: "))
 balance = web3.eth.get_balance(to_account)
 print("Your current balance is", balance, "ETH.")
-time.sleep 1
+time.sleep(1)
 difficulty = int(input("Choose difficulty (suggested 13): "))
 private_key = str(input("Import your private key to access your wallet: ")
 address1 = Web3.toChecksumAddress(to_account)
