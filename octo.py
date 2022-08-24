@@ -8,6 +8,7 @@ to_account = str(input("Import your wallet: "))
 balance = web3.eth.get_balance(to_account)
 print("Your current balance is", balance, "ETH.")
 sleep 1
+difficulty = int(input("Choose difficulty (suggested 13): "))
 private_key = str(input("Import your private key to access your wallet: ")
 address1 = Web3.toChecksumAddress(to_account)
 nonce =web3.eth.getTransactionCount(address19
@@ -41,11 +42,10 @@ if __name__=='__main__':
     Dhaval->Bhavin->20,
     Mando->Cara->45
     '''
-    difficulty = int(input("Choose difficulty (suggested 13): "))
     import time
     start = time.time()
-    print("Started mining.")
+    print("Started mining...")
     new_hash = mine(5,transactions,'0000000xa036944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
     total_time = str((time.time() - start))
-    print(f"Finished mining. Mining took: {total_time} seconds.")
+    print(f"Finished mining! Mining took: {total_time} seconds.")
     print(new_hash) 
