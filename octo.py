@@ -11,18 +11,6 @@ balance = web3.eth.get_balance(to_account)
 print("Your current balance is", balance, "ETH.")
 time.sleep(1)
 difficulty = int(input("Choose difficulty (suggested 13): "))
-private_key = str(input("Import your private key to access your wallet: "))
-address1 = Web3.toChecksumAddress(to_account)
-nonce =web3.eth.getTransactionCount(address1)
-TX = {
-    'nonce': nonce,
-    'to': address1,
-    'value': web3.toWei(0.001, 'ether'),
-    'gas': 21000
-    'gasPrice': web3.toWeì(40, 'gwel')
-}
-signed_tx = web3.eth.account.signTransaction(tx, private_key)
-tx_transaction = web3.eth.sendRawTransaction(signed_tx.rawTransaction)
 MAX_NONCE = 100000000000
 
 def SHA256(text):
