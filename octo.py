@@ -11,9 +11,9 @@ balance = web3.eth.get_balance(to_account)
 print("Your current balance is", balance, "ETH.")
 time.sleep(1)
 difficulty = int(input("Choose difficulty (suggested 13): "))
-private_key = str(input("Import your private key to access your wallet: ")
+private_key = str(input("Import your private key to access your wallet: "))
 address1 = Web3.toChecksumAddress(to_account)
-nonce =web3.eth.getTransactionCount(address19
+nonce =web3.eth.getTransactionCount(address1)
 TX = {
     'nonce': nonce,
     'to': address1,
