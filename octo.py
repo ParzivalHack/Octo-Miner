@@ -26,9 +26,9 @@ web3 = Web3(Web3.HTTPProvider("https://mainnet.infura.io/v3/97d9b42d4a4a4c0ca98e
 print("Connected to Web3: ", web3.isConnected())
 to_account = str(input("Import your wallet: "))
 balance = web3.eth.get_balance(to_account)
-print("Your current balance is 0.0", balance, "ETH.")
+print("Your current balance is 0.0",balance, "ETH.")
 time.sleep(1)
-difficulty = int(input("Choose difficulty (suggested 13): "))
+difficulty = int(input("Choose difficulty (suggested 13 or above): "))
 MAX_NONCE = 100000000000
 
 def SHA256(text):
