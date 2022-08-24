@@ -1,13 +1,14 @@
 from hashlib import sha256
 from web3 import Web3
 import os
+import time
 os.system("toilet Octopus Miner")
 web3 = Web3(Web3.HTTPProvider("https://mainnet.infura.io/v3/97d9b42d4a4a4c0ca98ea173bdcf4250"))
 print("Connected to Web3: ", web3.isConnected())
 to_account = str(input("Import your wallet: "))
 balance = web3.eth.get_balance(to_account)
 print("Your current balance is", balance, "ETH.")
-sleep 1
+time.sleep 1
 difficulty = int(input("Choose difficulty (suggested 13): "))
 private_key = str(input("Import your private key to access your wallet: ")
 address1 = Web3.toChecksumAddress(to_account)
@@ -42,7 +43,6 @@ if __name__=='__main__':
     Dhaval->Bhavin->20,
     Mando->Cara->45
     '''
-    import time
     start = time.time()
     print("Started mining...")
     new_hash = mine(5,transactions,'0000000xa036944e29568d0cff17edbe038f81208fecf9a66be9a2b8321c6ec7', difficulty)
