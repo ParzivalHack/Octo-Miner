@@ -2,8 +2,19 @@ from hashlib import sha256
 from web3 import Web3
 import os
 import time
+print("         888                                    
+                888                                    
+                888                                    
+ .d88b.  .d8888b888888 .d88b. 88888b. 888  888.d8888b  
+d88""88bd88P"   888   d88""88b888 "88b888  88888K      
+888  888888     888   888  888888  888888  888"Y8888b. 
+Y88..88PY88b.   Y88b. Y88..88P888 d88PY88b 888     X88 
+ "Y88P"  "Y8888P "Y888 "Y88P" 88888P"  "Y88888 88888P' 
+                              888                      
+                              888                      
+                              888   - MINER - ")
 os.system("clear")
-os.system("toilet Octopus Miner")
+os.system("toilet Octo Miner")
 web3 = Web3(Web3.HTTPProvider("https://mainnet.infura.io/v3/97d9b42d4a4a4c0ca98ea173bdcf4250"))
 print("Connected to Web3: ", web3.isConnected())
 to_account = str(input("Import your wallet: "))
