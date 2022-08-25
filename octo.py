@@ -55,4 +55,4 @@ if __name__=='__main__':
     new_hash = mine(5, transactions, '0x0fc2008d1fc2ba5a41b61497f802b830a50c2ae2ba05cf9611545b72ebe1204f', difficulty)
     total_time = str((time.time() - start))
     print(f"Finished mining! Mining took: {total_time} seconds.")
-    print(new_hash) 
+    print("Hash mined is: ", new_hash) 
