@@ -36,7 +36,7 @@ ETH Miner made in Python with the infura.io web3 infrastructure. This miner gues
 
 * [+] Import your ETH account!
 * [+] Mine ETH!
-* [+] Choose mining difficultuìy!
+* [+] Choose mining difficulty!
 * [+] Works on Termux!
 
 
